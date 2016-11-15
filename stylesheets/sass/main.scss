@@ -3,8 +3,20 @@
 //IMPORTS
 @import 'helpers/reset';
 
-p {
+//VARIABLES
+$squareSize: 150px;
 
-  color: red;
+div {
+
+  height: $squareSize;
+  width:  $squareSize;
+  line-height: $squareSize;
+  margin: 50px;
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: sans-serif;
 
 }
