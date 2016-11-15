@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$("#box").fadeOut(3e3)});
