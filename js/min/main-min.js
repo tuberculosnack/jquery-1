@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#box").click(function(){$("ul li:nth-child(2), #button1, #button2, #box").fadeTo("slow",.1)})});
