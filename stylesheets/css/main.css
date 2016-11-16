@@ -4,7 +4,10 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+#box h2,
+#box h3,
+#box h4, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -51,4 +54,114 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+#box {
+  height: auto;
+  min-height: 250px;
+  width: 350px;
+  background-color: #FFF;
+  border-radius: 3px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  padding: 0 0 40px 0;
+}
+
+#box img {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+#box h1, #box h2, #box h3, #box h4 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  margin: 25px 0 0 0;
+}
+
+#box h2 {
+  font-size: 16px;
+  margin: 15px 0 0 0;
+  font-weight: 500;
+  color: #555;
+}
+
+#box h3 {
+  font-size: 16px;
+  margin: 40px 0 0 0;
+  font-weight: 500;
+  color: #555;
+}
+
+#box h4 {
+  font-size: 12px;
+  margin: 40px 0 0 0;
+  font-weight: 500;
+  color: #3DA6EB;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+
+#box hr {
+  border: 1px dashed #CCC;
+  width: 80%;
+  margin: 20px auto 20px auto;
+}
+
+#box input[type="text"] {
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  padding: 8px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+  border: 1px solid #EFEFEF;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+}
+
+#box input[type="text"]:focus {
+  outline: none;
+}
+
+#box button {
+  height: 40px;
+  width: 85%;
+  background-color: #3DA6EB;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #FFF;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+#box ul {
+  margin: 10px 0 0 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+  background-color: #CCC;
+}
+
+#box ul li {
+  background-color: #FFF;
+  padding: 20px;
+  border-bottom: 1px solid #EEE;
+  cursor: pointer;
+}
+
+#box ul li:first-child {
+  border-top: 1px solid #EEE;
+}
+
+#box ul li:nth-child(odd) {
+  background-color: #F9F9F9;
 }
