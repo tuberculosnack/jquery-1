@@ -1,48 +1,48 @@
 // JQUERY
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  var $todoCount = 0;
-  var $todoInput = $('input[name="todoInput"]');
+    var $todoCount = 0;
+    var $todoInput = $('input[name="todoInput"]');
 
-  //ADD
-  $('button').click(function(){
+    //ADD
+    $('button').click(function() {
 
-    //Up count and replace text
-    $todoCount = $todoCount + 1;
-    $('h3').html('You have ' + $todoCount + ' todos!');
+        //Up count and replace text
+        $todoCount = $todoCount + 1;
+        $('h3').html('You have ' + $todoCount + ' todos!');
 
-    //capture input and add to li
-    var $input = $($todoInput).val();
-    var $li = $('<li>' + $input + '</li>');
-    $('ul').append($li);
+        //capture input and add to li
+        var $input = $($todoInput).val();
+        var $li = $('<li>' + $input + '</li>');
+        $('ul').append($li);
 
-    //clear entry
-    $($todoInput).val('');
+        //clear entry
+        $($todoInput).val('');
 
-  });
+    });
 
-  //DELETE
+    //DELETE
 
-  $(document).on('click', 'ul li', function(){
+    $(document).on('click', 'ul li', function() {
 
-    //Remove
-    $(this).remove();
+        //Remove
+        $(this).slideUp();
 
-    $todoCount = $todoCount - 1;
-    $('h3').html('You have ' + $todoCount + ' todos!');
+        $todoCount = $todoCount - 1;
+        $('h3').html('You have ' + $todoCount + ' todos!');
 
-  });
+    });
 
-  //Clear All
+    //Clear All
 
-  $('h4').click(function(){
+    $('h4').click(function() {
 
-    $todoCount = 0;
-    $('h3').html('Your todo list is empty!');
+        $todoCount = 0;
+        $('h3').html('Your todo list is empty!');
 
-    $('ul').empty();
+        $('ul').empty();
 
-  });
+    });
 
 });
