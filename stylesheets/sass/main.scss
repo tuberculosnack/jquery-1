@@ -4,19 +4,57 @@
 @import 'helpers/reset';
 
 //VARIABLES
-$squareSize: 150px;
+$squareSize: 300px;
 
-div {
+//PLACEHOLDERS
+
+%buttons {
+
+  width: 250px;
+  height: 65px;
+  border-radius: 5px;
+  background-color: #3DA6EB;
+  display: inline-block;
+  line-height: 65px;
+  color: #FFF;
+  font-family: sans-serif;
+  float: left;
+  margin: 75px 0 0 20px;
+
+}
+
+#container {
+
+  width:  900px;
+  height: auto;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+#box {
 
   height: $squareSize;
   width:  $squareSize;
   line-height: $squareSize;
-  margin: 50px;
+  display: inline-block;
+  margin: 25px auto 25px auto;
   background-color: red;
   border-radius: 5px;
   text-align: center;
   color: #FFF;
   text-transform: uppercase;
   font-family: sans-serif;
+
+}
+
+#button1 {
+
+  @extend %buttons;
+
+}
+
+#button2 {
+
+  @extend %buttons;
 
 }
